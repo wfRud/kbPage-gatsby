@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as varriable from "../../assets/styles/Varriables";
+import * as variable from "../../assets/styles/Variables";
 
 const SectionButton = styled.a`
   display: block;
@@ -9,19 +9,18 @@ const SectionButton = styled.a`
   height: 50px;
   text-align: center;
   line-height: 50px;
-  font-size: ${varriable.FONTSIZE_M};
-  color: ${(props) => (props.send ? varriable.white : varriable.textColor)};
-  background-color: ${(props) =>
-    props.send ? varriable.dark : varriable.white};
+  font-size: ${variable.FONTSIZE_M};
+  color: ${(props) => (props.send ? variable.white : variable.textColor)};
+  background-color: ${(props) => (props.send ? variable.dark : variable.white)};
   text-decoration: none;
-  border: 1px solid ${varriable.dark};
+  border: 1px solid ${variable.dark};
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {
     cursor: pointer;
     background-color: ${(props) =>
-      props.send ? varriable.white : varriable.dark};
-    color: ${(props) => (props.send ? varriable.textColor : varriable.white)};
+      props.send ? variable.white : variable.dark};
+    color: ${(props) => (props.send ? variable.textColor : variable.white)};
   }
 `;
 
